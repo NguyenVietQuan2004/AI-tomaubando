@@ -154,6 +154,17 @@
             margin-right: 10px;
             cursor: pointer;
         }
+        .temp{
+            display: none;
+        }
+        @media (max-width: 700px) {
+            .temp{
+                display: block;
+            }
+            .temp2{
+                display: none !important;
+            }
+        }
     </style>
 </head>
 
@@ -162,7 +173,7 @@
     </script>
     <div class="container">
         <div class="map-container">
-            <div>
+            <div style="padding: 0 2px;">
                 <h3 id="color-text">Số màu đã tô: 0</h3>
                 <button id="button2">In ra tập tin</button>
                 <button id="button3">Hiển thị kết quả</button>
@@ -173,7 +184,19 @@
             <svg class="map"></svg>
         </div>
         <div class="info-container">
+    <div class="temp">
+        <h3>Chọn màu để tô</h3>
+        <div class="pallete" style="display: flex; gap: 10px; padding: 10px; overflow: auto;">
+            <div style="min-width: 50px; min-height: 50px; background-color: rgb(86, 0, 139); border-radius: 50%;"></div>
+            <div style="min-width: 50px; min-height: 50px; background-color: rgb(33, 0, 100); border-radius: 50%;"></div>
+            <div style="min-width: 50px; min-height: 50px; background-color: rgb(0, 71, 64); border-radius: 50%;"></div>
+            <div style="min-width: 50px; min-height: 50px; background-color: rgb(0, 139, 23); border-radius: 50%;"></div>
+            <div style="min-width: 50px; min-height: 50px; background-color: rgb(142, 128, 0); border-radius: 50%;"></div>
+            <div style="min-width: 50px; min-height: 50px; background-color: rgb(141, 82, 0); border-radius: 50%;"></div>
+            <div style="min-width: 50px; min-height: 50px; background-color: rgb(139, 0, 0); border-radius: 50%;"></div>
 
+        </div>
+    </div>
             <h1>Tô màu bản đồ</h1>
             <p>Nhiệm vụ: hãy tô màu bản đồ sau cho hai khu vực gần nhau không có màu trùng nhau, và số màu sử dụng là ít
                 nhất</p>
@@ -186,17 +209,19 @@
                 <li id="choose3">Anh</li>
             </ul>
 
-            <h3>Chọn màu để tô</h3>
-            <div class="pallete" style="display: flex; gap: 10px; padding: 10px;">
-                <div style="width: 50px; height: 50px; background-color: rgb(86, 0, 139); border-radius: 50%;"></div>
-                <div style="width: 50px; height: 50px; background-color: rgb(33, 0, 100); border-radius: 50%;"></div>
-                <div style="width: 50px; height: 50px; background-color: rgb(0, 71, 64); border-radius: 50%;"></div>
-                <div style="width: 50px; height: 50px; background-color: rgb(0, 139, 23); border-radius: 50%;"></div>
-                <div style="width: 50px; height: 50px; background-color: rgb(142, 128, 0); border-radius: 50%;"></div>
-                <div style="width: 50px; height: 50px; background-color: rgb(141, 82, 0); border-radius: 50%;"></div>
-                <div style="width: 50px; height: 50px; background-color: rgb(139, 0, 0); border-radius: 50%;"></div>
+      <div class="temp2">
+        <h3 >Chọn màu để tô</h3>
+        <div class="pallete" style="display: flex; gap: 10px; padding: 10px; overflow: auto;">
+            <div style="min-width: 50px; min-height: 50px; background-color: rgb(86, 0, 139); border-radius: 50%;"></div>
+            <div style="min-width: 50px; min-height: 50px; background-color: rgb(33, 0, 100); border-radius: 50%;"></div>
+            <div style="min-width: 50px; min-height: 50px; background-color: rgb(0, 71, 64); border-radius: 50%;"></div>
+            <div style="min-width: 50px; min-height: 50px; background-color: rgb(0, 139, 23); border-radius: 50%;"></div>
+            <div style="min-width: 50px; min-height: 50px; background-color: rgb(142, 128, 0); border-radius: 50%;"></div>
+            <div style="min-width: 50px; min-height: 50px; background-color: rgb(141, 82, 0); border-radius: 50%;"></div>
+            <div style="min-width: 50px; min-height: 50px; background-color: rgb(139, 0, 0); border-radius: 50%;"></div>
 
-            </div>
+        </div>
+      </div>
 
 
 
